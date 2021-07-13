@@ -38,3 +38,5 @@ yarn-debug.log*
 # Other
 /config/credentials.yml.enc
 /config/database.yml
+/test
+/.framgia-ci-reports
