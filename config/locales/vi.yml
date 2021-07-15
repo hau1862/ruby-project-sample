@@ -2,18 +2,48 @@ vi:
   layouts:
     application:
       base_title: "Ruby on Rails Tutorial Sample App"
+    _header:
+      logo: "sample app"
+    _footer:
+      the: ""
+      rails_name: "Ruby on Rails Tutorial" 
+      by: "Bởi"
+      rails_author: "Michael Hartl"
+      news: "Tin tức"
+      about: "Tìm hiểu"
+      contact: "Liên lạc"
   static_page:
     home:
-      heading: "Trang chủ"
-      title: "Ruby on Rails Tutorial"
+      page_title: "Trang chủ"
+      heading: "Chào mừng đến với Sample App"
       intro: "Đây là trang chủ của"
-      name: "sample app"
+      title: "Ruby on Rails Tutorial"
+      name: "sample application"
+      sign_up: "Đăng kí ngay!"
     help:
+      page_title: "Hỗ trợ"
       heading: "Hỗ trợ"
       help_page:
-        title: "trang hỗ trợ của Rails Tutorial"
         intro: "Nhận hỗ trợ về Ruby on Rails Tutorial tại"
+        title: "trang hỗ trợ của Rails Tutorial"
       book_page:
-        name: "Ruby on Rails Tutorial"
         intro: "Để nhận hỗ trợ về sample app này, tham khảo"
+        name: "Ruby on Rails Tutorial"
         book: "book"
+    contact:
+      page_title: "Liên hệ"
+      heading: "Liên hệ"
+      intro: "Liên hệ với Ruby on Rails Tutorial để trao đổi về sample app tại"
+      title: "trang liên hệ"
+    about:
+      page_title: "Tìm hiẻu"
+      heading: "Tìm hiểu"
+      intro: "Tìm hiểu về sample app tại"
+      title: "trang tìm hiểu"
+  users:
+    new:
+      page_title: "Đăng kí"
+      heading: "Đăng kí"
+      intro: "Đây là trang đăng kí cho người dùng mới."
+    login:
+      page_title: "Đăng nhập"

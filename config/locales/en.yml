@@ -2,18 +2,48 @@ en:
   layouts:
     application:
       base_title: "Ruby on Rails Tutorial Sample App"
+    _header:
+      logo: "sample app"
+    _footer:
+      the: "The"
+      rails_name: "Ruby on Rails Tutorial" 
+      by: "by"
+      rails_author: "Michael Hartl"
+      news: "News"
+      about: "About"
+      contact: "Contact"
   static_page:
     home:
-      heading: "Home"
-      title: "Ruby on Rails Tutorial"
+      page_title: "Home"
+      heading: "Welcome to the Sample App"
       intro: "This is the home page for the"
-      name: "sample app"
+      title: "Ruby on Rails Tutorial"
+      name: "sample application"
+      sign_up: "Sign up now!"
     help:
+      page_title: "Help"
       heading: "Help"
       help_page:
-        title: "Rails Tutorial help page"
         intro: "Get help on the Ruby on Rails Tutorial at the"
+        title: "Rails Tutorial help page"
       book_page:
-        name: "Ruby on Rails Tutorial"
         intro: "To get help on this sample app, see the"
+        name: "Ruby on Rails Tutorial"
         book: "book"
+    contact:
+      page_title: "Contact"
+      heading: "Contact"
+      intro: "Contact the Ruby on Rails Tutorial about the sample app at the"
+      title: "contact page"
+    about:
+      page_title: "About"
+      heading: "About"
+      intro: "About the sample app at the"
+      title: "about page"
+  users:
+    new:
+      page_title: "Sign up"
+      heading: "Sign up"
+      intro: "This will be a sign up page for new users."
+    login:
+      page_title: "Login"
