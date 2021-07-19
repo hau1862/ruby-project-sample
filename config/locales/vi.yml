@@ -2,11 +2,11 @@ vi:
   layouts:
     application:
       base_title: "Ruby on Rails Tutorial Sample App"
-    _header:
+    header:
       logo: "sample app"
     _footer:
       the: ""
-      rails_name: "Ruby on Rails Tutorial" 
+      rails_name: "Ruby on Rails Tutorial"
       by: "Bởi"
       rails_author: "Michael Hartl"
       news: "Tin tức"

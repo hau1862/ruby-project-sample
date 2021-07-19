@@ -7,3 +7,16 @@ rails_author_link: "https://www.michaelhartl.com/"
 rails_news_link: "https://news.railstutorial.org/"
 rails_logo_link: "rails.svg"
 ruby_on_rails_link: "https://rubyonrails.org/"
+name:
+  length:
+    minimum: 2
+    maximum: 20
+email:
+  length:
+    minimum: 10
+    maximum: 50
+  valid_regex: !ruby/regexp /\A[\w+\-.]+@[a-z\d\-]+(\.[a-z\d\-]+)*\.[a-z]+\z/i
+password:
+  length:
+    minimum: 6
+    maximum: 50

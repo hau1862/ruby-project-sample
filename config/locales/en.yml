@@ -2,11 +2,11 @@ en:
   layouts:
     application:
       base_title: "Ruby on Rails Tutorial Sample App"
-    _header:
+    header:
       logo: "sample app"
     _footer:
       the: "The"
-      rails_name: "Ruby on Rails Tutorial" 
+      rails_name: "Ruby on Rails Tutorial"
       by: "by"
       rails_author: "Michael Hartl"
       news: "News"
