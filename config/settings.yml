@@ -20,3 +20,5 @@ password:
   length:
     minimum: 6
     maximum: 50
+date:
+  format: "%d/%m/%Y %H:%M:%S"

@@ -1,5 +1,6 @@
 @import 'bootstrap-sprockets';
 @import 'bootstrap';
+@import 'color';
 
 /* universal */
 
@@ -22,11 +23,10 @@ body {
   margin: 0 20px;
 
   a {
-    color: white;
+    color: $text-light-color;
     display: block;
     font-size: 32px;
     font-weight: bold;
-    color: white;
     align-self: center;
     text-decoration: none;
     text-transform: uppercase;
@@ -55,7 +55,7 @@ body {
 
     a:hover {
       background-color: transparent;
-      color: blue;
+      color: $text-dark-color;
     }
   }
 }
@@ -72,4 +72,52 @@ body {
 
 .image-link:hover {
   background-color: transparent;
+}
+
+.debug_dump {
+  width: 100%;
+  margin-top: 40px;
+  font-size: 16px;
+  color: $text-dark-color;
+  font-weight: bold;
+}
+
+.user-info {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+
+  .user-avatar {
+    margin-right: 16px;
+  }
+}
+
+.page__users-new {
+  text-align: center;
+
+  form.new_user {
+    text-align: left;
+    width: 400px;
+    display: inline-block;
+
+    label {
+      font-size: 16px;
+      margin: 8px;
+    }
+    .field_with_errors {
+      width: 100%;
+    }
+
+    .form-item {
+      width: 100%;
+      font-size: 20px;
+      padding: 4px 16px;
+      margin-bottom: 20px;
+    }
+
+    input[type="submit"] {
+      margin: 8px auto;
+      display: block;
+    }
+  }
 }

@@ -10,4 +10,10 @@ class ApplicationController < ActionController::Base
   def default_url_options
     {locale: I18n.locale}
   end
+
+  def show_errors_messages messages
+    messages.each do |attribute, message|
+      flash[:danger] = [attribute.to_s.capitalize, message[0]].join(": ")
+    end
+  end
 end
