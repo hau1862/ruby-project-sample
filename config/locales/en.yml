@@ -4,6 +4,10 @@ en:
       base_title: "Ruby on Rails Tutorial Sample App"
     header:
       logo: "sample app"
+      account: "Account"
+      profile: "Profile"
+      setting: "Settings"
+      logout: "Log out"
     _footer:
       the: "The"
       rails_name: "Ruby on Rails Tutorial"
@@ -70,3 +74,12 @@ en:
   shared:
     error_messages:
       show_error_number: "The form contains %{error_number} error"
+  sessions:
+    new:
+      page_title: "Login"
+      heading: "Login"
+      email: "Email Address"
+      password: "Password"
+    message:
+      login_fail: "Password or email wrong. Try again!"
+      login_success: "Log in successfully"

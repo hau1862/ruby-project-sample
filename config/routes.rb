@@ -5,6 +5,11 @@ Rails.application.routes.draw do
     get "/help", to: "static_page#help"
     get "/contact", to: "static_page#contact"
     get "/about", to: "static_page#about"
+
     resources :users
+
+    get "/login", to: "sessions#new"
+    post "/login", to: "sessions#create"
+    delete "/logout", to: "sessions#destroy"
   end
 end

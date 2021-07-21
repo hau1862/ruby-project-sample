@@ -59,10 +59,6 @@ Style/BlockDelimiters:
                 Prefer {...} over do...end for single-line blocks.
   Enabled: true
 
-# Style/BracesAroundHashParameters:
-#   Description: "Enforce braces style inside hash parameters."
-#   Enabled: true
-
 Style/CaseEquality:
   Description: "Avoid explicit use of the case equality operator(===)."
   Enabled: true

@@ -92,10 +92,11 @@ body {
   }
 }
 
+.page__login,
 .page__users-new {
   text-align: center;
 
-  form.new_user {
+  form {
     text-align: left;
     width: 400px;
     display: inline-block;
