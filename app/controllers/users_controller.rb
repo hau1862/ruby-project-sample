@@ -19,6 +19,7 @@ class UsersController < ApplicationController
     @user = User.new user_params
     if @user.save
       flash[:success] = t "users.show.welcome", name: @user.name
+      session[:user_id] = @user.id
       redirect_to @user
     else
       show_errors_messages @user.errors.messages

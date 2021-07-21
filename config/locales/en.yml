@@ -80,6 +80,8 @@ en:
       heading: "Login"
       email: "Email Address"
       password: "Password"
+      submit_text: "Log in"
+      remember_text: "Remember me on this computer"
     message:
       login_fail: "Password or email wrong. Try again!"
       login_success: "Log in successfully"

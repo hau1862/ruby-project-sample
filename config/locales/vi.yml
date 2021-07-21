@@ -80,6 +80,8 @@ vi:
       heading: "Đăng nhập"
       email: "Địa chỉ email"
       password: "Mật khẩu"
+      submit_text: "Đăng nhập"
+      remember_text: "Ghi nhớ đăng nhập"
     message:
       login_fail: "Tài khoản hoặc mật khẩu không đúng. Hãy kiểm tra lại"
       login_success: "Đăng nhập thành công"
