@@ -1,0 +1,19 @@
+<% provide :title, t(".page_title") %>
+
+<h1>
+  <%= t ".heading" %>
+</h1>
+<div class="user-info">
+  <div class="user-avatar">
+    <%= gravatar_for @user %>
+  </div>
+  <div class="user-desc">
+    <%= t ".name" %><%= @user.name %>
+    <br />
+    <%= t ".email" %><%= @user.email %>
+    <br />
+    <%= t ".created_at" %><%= @user.created_at.strftime Settings.date.format %>
+    <br />
+    <%= t ".updated_at" %><%= @user.updated_at.strftime Settings.date.format %>
+  </div>
+</div>

@@ -41,9 +41,32 @@ vi:
       intro: "Tìm hiểu về sample app tại"
       title: "trang tìm hiểu"
   users:
+    index:
+      name: "Tên: "
+      email: "Địa chỉ email: "
+      page_title: "All users"
+      not_found: "Không tìm thấy người dùng phù hợp"
     new:
       page_title: "Đăng kí"
       heading: "Đăng kí"
       intro: "Đây là trang đăng kí cho người dùng mới."
+      name: "Tên của bạn"
+      email: "Địa chỉ email"
+      password: "Mật khẩu"
+      password_confirm: "Nhập lại mật khẩu"
+      submit_text: "Tạo tài khoản"
+    show:
+      page_title: "Thông tin"
+      heading: "Thông tin người dùng"
+      name: "Tên"
+      email: "Địa chỉ email"
+      created_at: "Thời điểm tạo: "
+      updated_at: "Thời điểm cập nhật cuối: "
+      welcome: "Chào mừng %{name} đến với Sample App"
     login:
       page_title: "Đăng nhập"
+    helper:
+      gravatar_link: "https://secure.gravatar.com/avatar/%{gravatar_id}.jpg"
+  shared:
+    error_messages:
+      show_error_number: "Biểu mẫu có %{error_number} lỗi"

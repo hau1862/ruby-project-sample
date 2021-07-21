@@ -1,3 +1,17 @@
 <% provide :title, t(".page_title") %>
-<h1><%= t ".heading" %></h1>
-<p><%= t ".intro" %></p>
+<div class="page page__users-new">
+  <h1><%= t ".heading" %></h1>
+  <p><%= t ".intro" %></p>
+  <%= form_for @user do |f| %>
+    <%= render "shared/error_messages" %>
+    <%= f.label :name, t(".name") %>
+    <%= f.text_field :name, class: "form-item"  %>
+    <%= f.label :email, t(".email") %>
+    <%= f.email_field :email, class: "form-item"  %>
+    <%= f.label :password, t(".password") %>
+    <%= f.password_field :password, class: "form-item" %>
+    <%= f.label :password_confirmation, t(".password_confirm") %>
+    <%= f.password_field :password_confirmation, class: "form-item" %>
+    <%= f.submit t(".submit_text"), class: "btn btn-success" %>
+  <% end %>
+</div>
