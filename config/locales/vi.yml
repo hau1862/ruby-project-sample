@@ -4,6 +4,10 @@ vi:
       base_title: "Ruby on Rails Tutorial Sample App"
     header:
       logo: "sample app"
+      account: "Tài khoản"
+      profile: "Hồ sơ"
+      setting: "Cài đặt"
+      logout: "Đăng xuất"
     _footer:
       the: ""
       rails_name: "Ruby on Rails Tutorial"
@@ -58,8 +62,8 @@ vi:
     show:
       page_title: "Thông tin"
       heading: "Thông tin người dùng"
-      name: "Tên"
-      email: "Địa chỉ email"
+      name: "Tên: "
+      email: "Địa chỉ email: "
       created_at: "Thời điểm tạo: "
       updated_at: "Thời điểm cập nhật cuối: "
       welcome: "Chào mừng %{name} đến với Sample App"
@@ -70,3 +74,12 @@ vi:
   shared:
     error_messages:
       show_error_number: "Biểu mẫu có %{error_number} lỗi"
+  sessions:
+    new:
+      page_title: "Đăng nhập"
+      heading: "Đăng nhập"
+      email: "Địa chỉ email"
+      password: "Mật khẩu"
+    message:
+      login_fail: "Tài khoản hoặc mật khẩu không đúng. Hãy kiểm tra lại"
+      login_success: "Đăng nhập thành công"
