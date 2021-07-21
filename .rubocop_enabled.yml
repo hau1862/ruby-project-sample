@@ -622,9 +622,9 @@ Layout/EndAlignment:
   Description: "Align ends correctly."
   Enabled: true
 
-Style/EndBlock:
-  Description: "END blocks should not be placed inside method definitions."
-  Enabled: true
+# Style/EndBlock:
+#   Description: "END blocks should not be placed inside method definitions."
+#   Enabled: true
 
 Lint/EnsureReturn:
   Description: "Never use return in an ensure block."
