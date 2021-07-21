@@ -6,10 +6,9 @@ class SessionsController < ApplicationController
   def create
     remember_value = params[:sessions][:remember_me]
     user = User.find_by email: params[:sessions][:email].downcase
-
     if user&.authenticate params[:sessions][:password]
       login_user user, remember_value
-      redirect_to user
+      redirect_back_or user
     else
       flash[:danger] = t "sessions.message.login_fail"
       render :new
