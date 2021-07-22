@@ -50,15 +50,21 @@ vi:
       email: "Địa chỉ email: "
       page_title: "All users"
       not_found: "Không tìm thấy người dùng phù hợp"
+      show: "Xem"
+      edit: "Sửa"
+      delete: "Xóa"
+      utility: "Tiện ích"
+      login_require: "Làm ơn đăng nhập trước"
     new:
       page_title: "Đăng kí"
       heading: "Đăng kí"
       intro: "Đây là trang đăng kí cho người dùng mới."
-      name: "Tên của bạn"
-      email: "Địa chỉ email"
-      password: "Mật khẩu"
-      password_confirm: "Nhập lại mật khẩu"
       submit_text: "Tạo tài khoản"
+    edit:
+      page_title: "Sửa thông tin"
+      heading: "Sửa thông tin"
+      intro: "Đây là trang sửa thông tin."
+      submit_text: "Lưu thay đổi"
     show:
       page_title: "Thông tin"
       heading: "Thông tin người dùng"
@@ -69,8 +75,19 @@ vi:
       welcome: "Chào mừng %{name} đến với Sample App"
     login:
       page_title: "Đăng nhập"
+    update:
+      success: "Hồ sơ cá nhân đã được cập nhật"
+      fail: "Cập nhật thất bại"
+    destroy:
+      success: "Đã xoá người dùng"
+      fail: "Xóa thất bại"
     helper:
-      gravatar_link: "https://secure.gravatar.com/avatar/%{gravatar_id}.jpg"
+      gravatar_link: "https://secure.gravatar.com/avatar/%{gravatar_id}?s=%{size}"
+    _form:
+      name: "Tên của bản"
+      email: "Địa chỉ email"
+      password: "Mật khẩu"
+      password_confirm: "Nhập lại mật khẩu"
   shared:
     error_messages:
       show_error_number: "Biểu mẫu có %{error_number} lỗi"

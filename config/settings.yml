@@ -22,3 +22,6 @@ password:
     maximum: 50
 date:
   format: "%d/%m/%Y %H:%M:%S"
+image:
+  avatar_size: 50
+max_item_per_page: 10

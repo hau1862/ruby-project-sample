@@ -50,15 +50,21 @@ en:
       email: "Email Address"
       page_title: "All users"
       not_found: "User not found"
+      show: "Show"
+      edit: "Edit"
+      delete: "Delete"
+      utility: "Utility"
+      login_require: "Please log in"
     new:
       page_title: "Sign up"
       heading: "Sign up"
       intro: "This will be a sign up page for new users."
-      name: "Your name"
-      email: "Email address"
-      password: "Password"
-      password_confirm: "Confirm password"
       submit_text: "Create account"
+    edit:
+      page_title: "Edit"
+      heading: "Edit Information"
+      intro: "Edit information for user"
+      submit_text: "Save change"
     show:
       page_title: "Information"
       heading: "User Information"
@@ -67,10 +73,21 @@ en:
       created_at: "Created at: "
       updated_at: "Updated at: "
       welcome: "Hi %{name}. Welcome to the Sample App!"
+    update:
+      success: "Profile updated"
+      fail: "Update fail"
+    destroy:
+      success: "User deleted"
+      fail: "Delete fail"
     login:
       page_title: "Login"
     helper:
-      gravatar_link: "https://secure.gravatar.com/avatar/%{gravatar_id}.jpg"
+      gravatar_link: "https://secure.gravatar.com/avatar/%{gravatar_id}?s=%{size}"
+    _form:
+      name: "Your Name"
+      email: "Email Address"
+      password: "Password"
+      password_confirm: "Confirm Password"
   shared:
     error_messages:
       show_error_number: "The form contains %{error_number} error"
