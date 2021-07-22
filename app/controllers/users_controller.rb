@@ -17,9 +17,9 @@ class UsersController < ApplicationController
   def create
     @user = User.new user_params
     if @user.save
-      flash[:success] = t "users.show.welcome", name: @user.name
-      session[:user_id] = @user.id
-      redirect_to @user
+      @user.send_activation_email
+      flash[:info] = t "auths.mail.check_email"
+      redirect_to login_url
     else
       show_errors_messages @user.errors.messages
       render :new
@@ -48,7 +48,7 @@ class UsersController < ApplicationController
         show_errors_messages @user.errors.messages
       end
     end
-    redirect_to root_path
+    redirect_to users_path
   end
 
   private
@@ -61,7 +61,7 @@ class UsersController < ApplicationController
   def logged_in_user
     return if logged_in?
 
-    flash[:danger] = t ".users.index.login_require"
+    flash[:danger] = t "users.index.login_require"
     store_location
     redirect_to login_path
   end

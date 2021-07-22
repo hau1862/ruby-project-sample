@@ -102,3 +102,20 @@ en:
     message:
       login_fail: "Password or email wrong. Try again!"
       login_success: "Log in successfully"
+      activate_message: "Account not activated. Check your email for the activation link."
+  auths:
+    mail:
+      activate: "Activate"
+      check_email: "Please check your email to activate your account."
+      greeting: "Hi %name,"
+      subject: "Account activation"
+      intro: "Welcome to the Sample App! Click on the link below to activate your account:"
+      app_name: "Sample App"
+      activate:
+        success: "Account activated!"
+        fail: "Invalid activation link"
+    password:
+      greeting:
+      subject: "Password Reset"
+      intro:
+      app_name: "Sample App"

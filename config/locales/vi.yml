@@ -102,3 +102,20 @@ vi:
     message:
       login_fail: "Tài khoản hoặc mật khẩu không đúng. Hãy kiểm tra lại"
       login_success: "Đăng nhập thành công"
+      activate_message: "Account not activated. Check your email for the activation link."
+  auths:
+    mail:
+      activate: "Kích hoạt"
+      check_email: "Hãy kiểm tra email của bạn để kích hoạt tài khoản."
+      greeting: "Hi %name,"
+      subject: "Account activation"
+      intro: "Welcome to the Sample App! Click on the link below to activate your account:"
+      app_name: "Sample App"
+      activate:
+        success: "Account activated!"
+        fail: "Invalid activation link"
+    password:
+      greeting:
+      subject: "Password Reset"
+      intro:
+      app_name: "Sample App"
