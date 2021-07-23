@@ -1,0 +1,6 @@
+<h1><%= t "auths.mail.app_name" %></h1>
+<p><%= t "auths.mail.greeting", name: @user.name %></p>
+
+<p><%= t "auths.mail.intro" %></p>
+
+<%= link_to t("auths.mail.subject"), edit_account_activation_url(id: @user.activation_token, email: @user.email) %>
