@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_07_22_013532) do
+ActiveRecord::Schema.define(version: 2021_07_22_071110) do
 
   create_table "microposts", charset: "utf8mb4", collation: "utf8mb4_0900_ai_ci", force: :cascade do |t|
     t.text "content"
@@ -29,11 +29,11 @@ ActiveRecord::Schema.define(version: 2021_07_22_013532) do
     t.string "password_digest"
     t.string "remember_digest"
     t.boolean "admin"
-    t.string "reset_digest"
-    t.datetime "reset_sent_at"
     t.string "activation_digest"
     t.boolean "activated", default: false
     t.datetime "activated_at"
+    t.string "reset_digest"
+    t.datetime "reset_sent_at"
   end
 
   add_foreign_key "microposts", "users"
