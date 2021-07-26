@@ -73,6 +73,7 @@ en:
       created_at: "Created at: "
       updated_at: "Updated at: "
       welcome: "Hi %{name}. Welcome to the Sample App!"
+      count: "Number of microposts: %{count}."
     update:
       success: "Profile updated"
       fail: "Update fail"
@@ -91,6 +92,11 @@ en:
   shared:
     error_messages:
       show_error_number: "The form contains %{error_number} error"
+    micropost_form:
+      placeholder: "Compose new micropost..."
+      submit_text: "Post"
+    feed:
+      feed_title: "Micropost Feed"
   sessions:
     new:
       page_title: "Login"
@@ -139,3 +145,16 @@ en:
       password_blank: "can't be empty"
       success: "Password has been reset."
       fail: "Password resets fail"
+  microposts:
+    micropost:
+      time_ago: "Posted %{time} ago."
+      delete: "Delete"
+      data_confirm: "Are you sure?"
+    message:
+      login_require: "Please log in"
+      create_success: "Micropost created!"
+      create_fail: "Create fail!"
+      delete_success: "Micropost deleted"
+      delete_fail: "Delete fail"
+      valid_format_image: "must be a valid image format"
+      image_size_warning: "Maximum file size is 5MB. Please choose a smaller file."

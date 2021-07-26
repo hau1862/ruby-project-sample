@@ -17,3 +17,13 @@
     <%= t ".updated_at" %><%= @user.updated_at.strftime Settings.date.format %>
   </div>
 </div>
+
+<div class="microposts">
+  <% if @microposts.any? %>
+    <h3><%= t ".count", count: @microposts.count %></h3>
+    <ol class="micropost-list">
+      <%= render @microposts %>
+    </ol>
+    <%= paginate @microposts, theme: "twitter-bootstrap-3" %>
+  <% end %>
+</div>
