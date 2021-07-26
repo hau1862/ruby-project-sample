@@ -12,7 +12,10 @@ class UsersController < ApplicationController
     @users = User.all.page(params[:page]).per Settings.max_item_per_page
   end
 
-  def show; end
+  def show
+    @microposts = @user.microposts.page(params[:page])
+                       .per Settings.max_item_per_page
+  end
 
   def create
     @user = User.new user_params
