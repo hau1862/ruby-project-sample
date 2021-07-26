@@ -89,6 +89,9 @@ vi:
       email: "Địa chỉ email"
       password: "Mật khẩu"
       password_confirm: "Nhập lại mật khẩu"
+    show_follow:
+      profile: "view my profile"
+      num_of_micropost: "Number of microposts: "
   shared:
     error_messages:
       show_error_number: "Biểu mẫu có %{error_number} lỗi"
@@ -158,3 +161,20 @@ vi:
       delete_fail: "Delete fail"
       valid_format_image: "must be a valid image format"
       image_size_warning: "Maximum file size is 5MB. Please choose a smaller file."
+  follow:
+    following: "Following"
+    followers: "Followers"
+    follow: "Follow"
+    unfollow: "Unfollow"
+    follow_success: "Follow success"
+    follow_fail: "Follow fail"
+    unfollow_success: "Unfollow success"
+    unfollow_fail: "Unfollow fail"
+  activerecord:
+    errors:
+      models:
+        micropost:
+          attributes:
+            image:
+              invalid_format_image: "must be a valid image format"
+              should_smaller: "should be less than 5MB"

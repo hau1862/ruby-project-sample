@@ -8,11 +8,12 @@ class Micropost < ApplicationRecord
                       length: {maximum: Settings.content.length.max}
   validates :image,
             content_type: {in: Settings.image.type,
-                           message: microposts.message.valid_format_image},
+                           message: :valid_format_image},
             size: {less_than: Settings.image.size.megabytes,
-                   message: microposts.message.image_size_warning}
+                   message: :image_size_warning}
 
   scope :newest, ->{order(created_at: :desc)}
+  scope :by_user_ids, ->(user_ids){where user_id: user_ids}
 
   delegate :name, to: :user, prefix: true
 

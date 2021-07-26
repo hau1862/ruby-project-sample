@@ -19,4 +19,21 @@ class ApplicationController < ActionController::Base
       flash[:danger] = [attribute.to_s.capitalize, message[0]].join(": ")
     end
   end
+
+  private
+
+  def logged_in_user
+    return if logged_in?
+
+    flash[:danger] = t "users.index.login_require"
+    store_location
+    redirect_to login_path
+  end
+
+  def find_user_by_id
+    @user = User.find_by id: params[:id]
+    return if @user
+
+    redirect_to root_path
+  end
 end
