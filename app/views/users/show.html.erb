@@ -19,6 +19,7 @@
 </div>
 
 <div class="microposts">
+  <%= render "follow_form" if logged_in? %>
   <% if @microposts.any? %>
     <h3><%= t ".count", count: @microposts.count %></h3>
     <ol class="micropost-list">
